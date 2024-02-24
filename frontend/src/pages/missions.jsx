@@ -2,11 +2,12 @@ import React from "react";
 import "./missions.css";
 import { FaHandsHelping, FaCross } from "react-icons/fa";
 import { HiBars3 } from "react-icons/hi2";
+import { Link } from "react-router-dom";
 
 const Missions = () => {
   return (
     <div className="missionHeadings">
-      <div className="allHeadings">
+      <div className="allHeadings" data-aos="fade-in">
         <div className="background">
           <h1>Our Mission</h1>
           <p>
@@ -65,7 +66,9 @@ const Missions = () => {
             </ul>
           </div>
         </div>
-        <a href="#">Contact Us</a>
+        <Link className="contact" to="/contact">
+          Contact Us
+        </Link>
       </div>
     </div>
   );

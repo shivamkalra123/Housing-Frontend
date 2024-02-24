@@ -12,6 +12,11 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import Logo from "../assets/images/unnamed.jpg";
 
+const imageStyle = {
+  height: "100px",
+  width: "auto",
+};
+
 const pages = [
   { name: "Home", path: "/" },
   { name: "Our Mission", path: "/mission" },
@@ -19,12 +24,7 @@ const pages = [
   { name: "Contact Us", path: "/contact" },
 ];
 
-const imageStyle = {
-  height: "100px",
-  width: "auto",
-};
-
-function ResponsiveAppBar() {
+const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -43,10 +43,18 @@ function ResponsiveAppBar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* Logo */}
-          <img style={imageStyle} src={Logo} alt="Nothing" />
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <img style={imageStyle} src={Logo} alt="Nothing" />
+          </Link>
 
-          {/* Mobile Menu */}
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          {/* Mobile Menu (float to right on mobile) */}
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "flex", md: "none" },
+              justifyContent: "flex-end", // Float to the right on mobile
+            }}
+          >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -112,6 +120,6 @@ function ResponsiveAppBar() {
       </Container>
     </AppBar>
   );
-}
+};
 
 export default ResponsiveAppBar;

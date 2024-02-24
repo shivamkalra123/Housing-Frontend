@@ -1,16 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./blog.css";
 import ownerImage from "../assets/images/owner-removedbg.png";
+import { Link } from "react-router-dom";
+import AOS from "aos";
 const blog = () => {
+  useEffect(() => {
+    AOS.init({
+      // Customize your AOS settings here
+      duration: 800,
+      offset: 200,
+      easing: "ease-in-out",
+      delay: 100,
+    });
+  }, []);
   return (
     <div>
       <div className="blogHeading">
-        <div className="blogContent">
+        <div className="blogContent" data-aos="fade-in">
           <h1>About Me</h1>
           <img src={ownerImage} alt="notFound" />
-
           <p>
-            Tiffany Debro is the founder and owner of Faith to Faith Family Care
+            Tiffany Debro is the founder and owner of Faith to Faith Solutions
             LLC. She have always had a passion for caring for others, that has
             resulted in her having over 14 years of medical experience. Faith to
             Faith Family Care is a God given idea that came to life during a
@@ -23,6 +33,11 @@ const blog = () => {
             environment to those in desperate need would only come natural to
             her.
           </p>
+          <div className="contactContainer">
+            <Link className="contact" to="/contact">
+              Contact Us
+            </Link>
+          </div>
         </div>
       </div>
     </div>

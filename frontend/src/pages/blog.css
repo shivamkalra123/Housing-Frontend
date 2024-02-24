@@ -1,7 +1,7 @@
 .blogHeading {
   background-color: #001f3f;
   color: white;
-  height: 150vh;
+
   font-family: "Poppins", sans-serif;
 }
 
@@ -13,6 +13,9 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+.blogContent {
+  text-align: center;
 }
 
 .blogContent h1 {
@@ -38,7 +41,14 @@
   .blogContent p {
     width: 80%;
   }
-  .blogHeading {
-    height: 220vh;
-  }
+}
+.contact {
+  text-decoration: none;
+  color: white;
+  border: solid white 1px;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+.contactContainer {
+  padding: 20px;
 }
