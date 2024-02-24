@@ -1,7 +1,7 @@
 .missionHeadings {
   background-color: #001f3f;
   color: white;
-  height: 195vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,7 +76,6 @@ ul li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 240vh;
   }
 
   .missionHeadings h1 {

@@ -66,9 +66,12 @@ const Missions = () => {
             </ul>
           </div>
         </div>
-        <Link className="contact" to="/contact">
-          Contact Us
-        </Link>
+
+        <div className="contactContainer">
+          <Link className="contact" to="/contact">
+            Contact Us
+          </Link>
+        </div>
       </div>
     </div>
   );
