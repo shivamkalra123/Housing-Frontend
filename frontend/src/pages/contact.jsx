@@ -21,7 +21,7 @@ const ContactForm = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/send-email",
+        "https://housing-frontend-hdiw.vercel.app/send-email",
         formData
       );
       console.log(response.data);
