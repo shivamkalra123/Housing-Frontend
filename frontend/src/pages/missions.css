@@ -1,0 +1,88 @@
+.missionHeadings {
+  background-color: #001f3f;
+  color: white;
+  height: 195vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.allHeadings {
+  width: 60%;
+  text-align: center;
+}
+
+.sections-container {
+  display: flex;
+  justify-content: space-around; /* Adjust as needed */
+}
+
+.section {
+  margin: 20px;
+  padding: 20px;
+  color: black;
+  background-color: rgb(195, 194, 194);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  flex: 1; /* Distribute available space equally */
+}
+
+.missionHeadings h1 {
+  color: #ff005d;
+  font-size: 50px;
+  text-align: center;
+}
+
+.icon {
+  border-radius: 50%;
+  border: solid white 1px;
+  font-size: 70px;
+  background-color: #ff005d;
+  color: #001f3f;
+  margin: 0 auto; /* Center the icon horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 760px) {
+  .allHeadings {
+    margin-left: 10px;
+
+    width: 80%; /* Adjust the width for smaller screens */
+  }
+  .allHeadings h1 {
+    padding: 20px;
+  }
+
+  .section {
+    flex: 2; /* Adjust the flex property for smaller screens */
+  }
+
+  .missionHeadings {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    height: 240vh;
+  }
+
+  .missionHeadings h1 {
+    font-size: 40px; /* Adjust the font size for smaller screens */
+  }
+
+  .icon {
+    font-size: 50px; /* Adjust the icon size for smaller screens */
+  }
+}

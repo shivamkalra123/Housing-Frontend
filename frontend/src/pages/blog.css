@@ -1,0 +1,44 @@
+.blogHeading {
+  background-color: #001f3f;
+  color: white;
+  height: 150vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.blogContent img {
+  width: 20%;
+  background-color: #5e0ed5;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.blogContent h1 {
+  color: #ff005d;
+  font-size: 52px;
+  text-align: center;
+  padding: 20px;
+}
+.blogContent p {
+  text-align: center;
+  width: 54%;
+  font-size: 23px;
+  line-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+@media screen and (max-width: 760px) {
+  .blogContent img {
+    width: 50%;
+  }
+  .blogContent p {
+    width: 80%;
+  }
+  .blogHeading {
+    height: 220vh;
+  }
+}
