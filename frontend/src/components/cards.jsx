@@ -34,7 +34,7 @@ const cards = () => {
           <Card.Img variant="top" src={homeLess} />
           <Card.Body style={{ fontSize: "20px" }}>
             <Card.Text>
-              According to a resent study given by world population review there
+              According to a recent study given by world population review there
               are more then a half of million homeless people in America right
               now.
             </Card.Text>
