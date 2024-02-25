@@ -8,6 +8,7 @@ import Missions from "./pages/missions";
 import Home from "./pages/home";
 import Blog from "./pages/blog";
 import ContactForm from "./pages/contact";
+import Footer from "./components/footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,6 +22,7 @@ function App() {
         <Route path="/blog" element={<Blog />}></Route>
         <Route path="/contact" element={<ContactForm />}></Route>
       </Routes>
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,14 @@
+/* Mobile Styles - Center the logo */
+@media screen and (max-width: 760px) {
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+  }
+  .logoImage {
+    width: 140px;
+  }
+}
+
+/* Desktop Styles - Center the desktop links */

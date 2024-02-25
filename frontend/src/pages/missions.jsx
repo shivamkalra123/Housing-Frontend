@@ -49,20 +49,20 @@ const Missions = () => {
             <HiBars3 className="icon" />
             <h1>Our Amenities</h1>
             <ul>
-              <li>Fully Furnished Home</li>
-              <li>Private and Semi-Private Rooms</li>
-              <li>Bed and Bedding</li>
-              <li>Welcome Kit</li>
-              <li>Utilities: Electric and Water</li>
-              <li>Washer and Dryer on site</li>
-              <li>Phone</li>
-              <li>Smart TV</li>
-              <li>Internet Cable</li>
-              <li>Wi-Fi</li>
-              <li>Security System</li>
-              <li>List of local Community Services</li>
-              <li>List of Public Transportation options</li>
-              <li>Well-manicured Lawn</li>
+              <li>*Fully Furnished Home</li>
+              <li>*Private and Semi-Private Rooms</li>
+              <li>*Bed and Bedding</li>
+              <li>*Welcome Kit</li>
+              <li>*Utilities: Electric and Water</li>
+              <li>*Washer and Dryer on site</li>
+              <li>*Phone</li>
+              <li>*Smart TV</li>
+              <li>*Internet Cable</li>
+              <li>*Wi-Fi</li>
+              <li>*Security System</li>
+              <li>*List of local Community Services</li>
+              <li>*List of Public Transportation options</li>
+              <li>*Well-manicured Lawn</li>
             </ul>
           </div>
         </div>

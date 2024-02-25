@@ -4,6 +4,7 @@ import "./home.css";
 import { FaQuoteLeft } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import bannerImage from "../assets/images/banner-image.jpeg";
 import {
   FaHandshake,
   FaHome,
@@ -44,10 +45,7 @@ const home = () => {
             </a>
           </div>
         </div>
-        <img
-          src="https://mediaindia.eu/wp-content/uploads/2016/06/Slum_Mayurvihar_NGO.jpg"
-          alt="NotFound"
-        />
+        <img src={bannerImage} alt="NotFound" />
       </div>
 
       <div className="subBanner">
@@ -93,7 +91,6 @@ const home = () => {
           <a href="">Contact Us</a>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

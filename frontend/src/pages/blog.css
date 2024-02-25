@@ -36,7 +36,7 @@
 }
 @media screen and (max-width: 760px) {
   .blogContent img {
-    width: 50%;
+    width: 70%;
   }
   .blogContent p {
     width: 80%;

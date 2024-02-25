@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./blog.css";
-import ownerImage from "../assets/images/owner-removedbg.png";
+import ownerImage from "../assets/images/owner.jpg";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 const blog = () => {
@@ -17,7 +17,7 @@ const blog = () => {
     <div>
       <div className="blogHeading">
         <div className="blogContent" data-aos="fade-in">
-          <h1>About Me</h1>
+          <h1>About The Owner</h1>
           <img src={ownerImage} alt="notFound" />
           <p>
             Tiffany Debro is the founder and owner of Faith to Faith Solutions

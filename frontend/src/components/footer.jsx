@@ -85,8 +85,8 @@ export default function App() {
         className="text-center p-3"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
-        © 2020 Copyright:
-        <p>Hey</p>
+        © 2024 Copyright:
+        <p>Faith To Faith LLC</p>
       </div>
     </MDBFooter>
   );

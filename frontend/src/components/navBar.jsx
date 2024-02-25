@@ -11,16 +11,18 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import Logo from "../assets/images/unnamed.jpg";
+import "./navbar.css";
 
 const imageStyle = {
-  height: "100px",
+  height: "139px",
   width: "auto",
+  // Mobile-specific styles
 };
 
 const pages = [
   { name: "Home", path: "/" },
   { name: "Our Mission", path: "/mission" },
-  { name: "Blog", path: "/blog" },
+  { name: "About", path: "/blog" },
   { name: "Contact Us", path: "/contact" },
 ];
 
@@ -43,9 +45,20 @@ const ResponsiveAppBar = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* Logo */}
-          <Link to="/" style={{ textDecoration: "none" }}>
-            <img style={imageStyle} src={Logo} alt="Nothing" />
-          </Link>
+          <div className="logoContainer">
+            <Link
+              className="logoStyle"
+              to="/"
+              style={{ textDecoration: "none" }}
+            >
+              <img
+                className="logoImage"
+                style={imageStyle}
+                src={Logo}
+                alt="Nothing"
+              />
+            </Link>
+          </div>
 
           {/* Mobile Menu (float to right on mobile) */}
           <Box
