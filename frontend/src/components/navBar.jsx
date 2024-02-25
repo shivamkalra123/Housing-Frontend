@@ -26,6 +26,10 @@ const pages = [
   { name: "Contact Us", path: "/contact" },
 ];
 
+// ... (previous imports)
+
+// ... (previous imports)
+
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
 
@@ -40,73 +44,87 @@ const ResponsiveAppBar = () => {
   return (
     <AppBar
       position="static"
-      sx={{ backgroundColor: "#001f3f", alignItems: "center" }}
+      sx={{
+        backgroundColor: "#FFFFFF",
+        alignItems: "center",
+      }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          {/* Logo */}
-          <div className="logoContainer">
-            <Link
-              className="logoStyle"
-              to="/"
-              style={{ textDecoration: "none" }}
-            >
-              <img
-                className="logoImage"
-                style={imageStyle}
-                src={Logo}
-                alt="Nothing"
-              />
-            </Link>
-          </div>
+          {/* Center both the icon and the logo */}
+          <div className="centeredContainer">
+            {/* Logo */}
+            <div className="logoContainer">
+              <Link
+                className="logoStyle"
+                to="/"
+                style={{ textDecoration: "none" }}
+              >
+                <img
+                  className="logoImage"
+                  style={imageStyle}
+                  src={Logo}
+                  alt="Nothing"
+                />
+              </Link>
+            </div>
 
-          {/* Mobile Menu (float to right on mobile) */}
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "flex", md: "none" },
-              justifyContent: "flex-end", // Float to the right on mobile
-            }}
-          >
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">
-                    <Link to={page.path} style={{ textDecoration: "none" }}>
-                      {page.name}
-                    </Link>
-                  </Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
+            {/* Mobile Menu (float to right on mobile) */}
+            <div className="mobileIcons">
+              <Box
+                sx={{
+                  display: { xs: "flex", md: "none" },
+                  flexDirection: "column", // Stack items vertically
+                }}
+              >
+                <IconButton
+                  size="large"
+                  aria-label="account of current user"
+                  aria-controls="menu-appbar"
+                  aria-haspopup="true"
+                  onClick={handleOpenNavMenu}
+                  color="inherit"
+                  sx={{
+                    "& .MuiSvgIcon-root": {
+                      color: "black",
+
+                      // Set the color of the bars to black
+                    },
+                  }}
+                >
+                  <MenuIcon />
+                </IconButton>
+                <Menu
+                  id="menu-appbar"
+                  anchorEl={anchorElNav}
+                  anchorOrigin={{
+                    vertical: "bottom",
+                    horizontal: "left",
+                  }}
+                  keepMounted
+                  transformOrigin={{
+                    vertical: "top",
+                    horizontal: "left",
+                  }}
+                  open={Boolean(anchorElNav)}
+                  onClose={handleCloseNavMenu}
+                  sx={{
+                    display: { xs: "block", md: "none" },
+                  }}
+                >
+                  {pages.map((page) => (
+                    <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                      <Typography textAlign="center">
+                        <Link to={page.path} style={{ textDecoration: "none" }}>
+                          {page.name}
+                        </Link>
+                      </Typography>
+                    </MenuItem>
+                  ))}
+                </Menu>
+              </Box>
+            </div>
+          </div>
 
           {/* Desktop Links Centered */}
           <Box
@@ -121,7 +139,7 @@ const ResponsiveAppBar = () => {
                 key={page.name}
                 component={Link}
                 to={page.path}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, color: "black", display: "block" }}
               >
                 {page.name}
               </Button>

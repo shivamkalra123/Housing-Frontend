@@ -32,7 +32,7 @@ export default function App() {
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
         © 2024 Copyright:
-        <p>Faith To Faith LLC</p>
+        <p>Faith To Faith Solutions LLC</p>
       </div>
     </MDBFooter>
   );

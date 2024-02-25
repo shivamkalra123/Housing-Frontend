@@ -32,8 +32,8 @@ const home = () => {
   }, []);
   return (
     <div>
-      <div class="banner-image">
-        <div class="overlay" data-aos="fade-right">
+      <div className="banner-image">
+        <div className="overlay" data-aos="fade-right">
           <div className="headings">
             <h1 className="banner-head">
               <span>Empowering</span> Lives
