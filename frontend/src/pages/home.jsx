@@ -65,8 +65,8 @@ const home = () => {
         </div>
       </div>
       <div className="queries">
-        {/* <h2>Our Stories</h2> */}
-        {/* <Cards /> */}
+        <h2>Our Stories</h2>
+        <Cards />
         <div className="wholeQuote">
           <div className="quote">
             <i>
