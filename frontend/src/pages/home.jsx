@@ -13,6 +13,7 @@ import {
 } from "react-icons/fa";
 import Footer from "../components/footer";
 import Cards from "../components/cards";
+import { Link } from "react-router-dom";
 const home = () => {
   const icons = {
     Empower: <FaHandshake />,
@@ -40,9 +41,6 @@ const home = () => {
             <h1 className="banner-head">
               Sharing <span>Homes</span>
             </h1>
-            <a href="#" className="readMore">
-              Know More➡️
-            </a>
           </div>
         </div>
         <img src={bannerImage} alt="NotFound" />
@@ -67,8 +65,8 @@ const home = () => {
         </div>
       </div>
       <div className="queries">
-        <h2>Our Stories</h2>
-        <Cards />
+        {/* <h2>Our Stories</h2> */}
+        {/* <Cards /> */}
         <div className="wholeQuote">
           <div className="quote">
             <i>
@@ -88,7 +86,7 @@ const home = () => {
             shared living environment for those in need, meeting specific
             criteria.
           </i>
-          <a href="">Contact Us</a>
+          <Link to="/contact">Contact Us</Link>
         </div>
       </div>
     </div>
