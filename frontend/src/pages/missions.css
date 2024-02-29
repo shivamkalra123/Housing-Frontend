@@ -33,12 +33,14 @@
   font-size: 50px;
   text-align: center;
 }
-
+.background h1 {
+  padding: 40px;
+}
 .icon {
   border-radius: 50%;
   border: solid white 1px;
   font-size: 70px;
-  background-color: #ff005d;
+  background-color: #a23f5b;
   color: #001f3f;
   margin: 0 auto; /* Center the icon horizontally */
   display: flex;
