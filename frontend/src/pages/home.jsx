@@ -4,7 +4,7 @@ import "./home.css";
 import { FaQuoteLeft } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import bannerImage from "../assets/images/banner-image.png";
+import bannerImage from "../assets/images/banner-image.jpeg";
 import {
   FaHandshake,
   FaHome,
